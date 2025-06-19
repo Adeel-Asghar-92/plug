@@ -1,0 +1,2757 @@
+[{
+  "_id": {
+    "$oid": "675463a682bfb9f525c0449e"
+  },
+  "name": "Construction",
+  "subcategories": [
+    {
+      "name": "Mini Excavators",
+      "_id": {
+        "$oid": "675463ae82bfb9f525c044a2"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:03:10.322Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:03:10.322Z"
+      }
+    },
+    {
+      "name": "Concrete Mixers",
+      "_id": {
+        "$oid": "675463b682bfb9f525c044a8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:03:18.273Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:03:18.273Z"
+      }
+    },
+    {
+      "name": "Electric Hoists & Lifts",
+      "_id": {
+        "$oid": "675463bb82bfb9f525c044b0"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:03:23.232Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:03:23.232Z"
+      }
+    },
+    {
+      "name": "Cranes",
+      "_id": {
+        "$oid": "675463eb82bfb9f525c044dd"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:04:11.608Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:04:11.608Z"
+      }
+    },
+    {
+      "name": "Road Rollers",
+      "_id": {
+        "$oid": "675463f782bfb9f525c044e9"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:04:23.569Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:04:23.569Z"
+      }
+    },
+    {
+      "name": "Backhoe Loaders",
+      "_id": {
+        "$oid": "675463ff82bfb9f525c044f7"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:04:31.345Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:04:31.345Z"
+      }
+    },
+    {
+      "name": "Bulldozers",
+      "_id": {
+        "$oid": "6754640582bfb9f525c04507"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:04:37.473Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:04:37.473Z"
+      }
+    },
+    {
+      "name": "Forklifts",
+      "_id": {
+        "$oid": "6754640d82bfb9f525c04519"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:04:45.752Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:04:45.752Z"
+      }
+    },
+    {
+      "name": "Jackhammers & Demolition",
+      "_id": {
+        "$oid": "6754641e82bfb9f525c0452d"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:05:02.319Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:05:02.319Z"
+      }
+    },
+    {
+      "name": "Portable Welding Machines",
+      "_id": {
+        "$oid": "6754642c82bfb9f525c04543"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:05:16.993Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:05:16.993Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:03:02.456Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:05:16.993Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "6754643f82bfb9f525c04551"
+  },
+  "name": "Industrial Tools",
+  "subcategories": [
+    {
+      "name": "Excavators",
+      "_id": {
+        "$oid": "6754644c82bfb9f525c0455f"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:05:48.023Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:05:48.023Z"
+      }
+    },
+    {
+      "name": "Loaders",
+      "_id": {
+        "$oid": "6754645282bfb9f525c0456f"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:05:54.453Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:05:54.453Z"
+      }
+    },
+    {
+      "name": "Skid Steer Loaders",
+      "_id": {
+        "$oid": "6754645b82bfb9f525c04581"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:06:03.014Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:06:03.014Z"
+      }
+    },
+    {
+      "name": "Pavers",
+      "_id": {
+        "$oid": "6754646382bfb9f525c04595"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:06:11.292Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:06:11.292Z"
+      }
+    },
+    {
+      "name": "Compactors",
+      "_id": {
+        "$oid": "6754646c82bfb9f525c045ab"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:06:20.591Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:06:20.591Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:05:35.115Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:06:20.592Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "6754648182bfb9f525c045be"
+  },
+  "name": "Power & Solar",
+  "subcategories": [
+    {
+      "name": "Portable Power Generators",
+      "_id": {
+        "$oid": "6754648982bfb9f525c045d1"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:06:49.988Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:06:49.988Z"
+      }
+    },
+    {
+      "name": "Diesel Generators",
+      "_id": {
+        "$oid": "6754649582bfb9f525c045e6"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:07:01.636Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:07:01.636Z"
+      }
+    },
+    {
+      "name": "Inverter Generators",
+      "_id": {
+        "$oid": "6754649f82bfb9f525c045fd"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:07:11.399Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:07:11.399Z"
+      }
+    },
+    {
+      "name": "Gasoline Generators",
+      "_id": {
+        "$oid": "675464a982bfb9f525c04616"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:07:21.089Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:07:21.089Z"
+      }
+    },
+    {
+      "name": "Dual Fuel Generators",
+      "_id": {
+        "$oid": "675464b582bfb9f525c04631"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:07:33.072Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:07:33.072Z"
+      }
+    },
+    {
+      "name": "Solar Power Generators",
+      "_id": {
+        "$oid": "675464c282bfb9f525c0464e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:07:46.957Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:07:46.957Z"
+      }
+    },
+    {
+      "name": "Silent Generators",
+      "_id": {
+        "$oid": "675464cf82bfb9f525c0466d"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:07:59.296Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:07:59.296Z"
+      }
+    },
+    {
+      "name": "Heavy-Duty Generators",
+      "_id": {
+        "$oid": "675464e182bfb9f525c0468e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:08:17.226Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:08:17.226Z"
+      }
+    },
+    {
+      "name": "Automated Backup Generators",
+      "_id": {
+        "$oid": "675464e582bfb9f525c046b1"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:08:21.327Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:08:21.327Z"
+      }
+    },
+    {
+      "name": "Wind & Solar Hybrid Generators",
+      "_id": {
+        "$oid": "675464ef82bfb9f525c046d6"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:08:31.338Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:08:31.338Z"
+      }
+    },
+    {
+      "name": "Wi-Fi Light Switches",
+      "_id": {
+        "$oid": "67546cd5b5f3aeb2a6cfd5b0"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:42:13.613Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:42:13.613Z"
+      }
+    },
+    {
+      "name": "Adjustable Weights",
+      "_id": {
+        "$oid": "67546ce0b5f3aeb2a6cfd63a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:42:24.410Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:42:24.410Z"
+      }
+    },
+    {
+      "name": "Color-Changing Lights",
+      "_id": {
+        "$oid": "67546cebb5f3aeb2a6cfd6c6"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:42:35.352Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:42:35.352Z"
+      }
+    },
+    {
+      "name": "Workout Gloves",
+      "_id": {
+        "$oid": "67546cf3b5f3aeb2a6cfd754"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:42:43.824Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:42:43.824Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:06:41.196Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:42:43.824Z"
+  },
+  "__v": 14
+},
+{
+  "_id": {
+    "$oid": "675464f982bfb9f525c046f3"
+  },
+  "name": "Drones",
+  "subcategories": [
+    {
+      "name": "Camera Drones",
+      "_id": {
+        "$oid": "6754650b82bfb9f525c04710"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:08:59.593Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:08:59.593Z"
+      }
+    },
+    {
+      "name": "FPV Racing Drones",
+      "_id": {
+        "$oid": "6754651482bfb9f525c0472f"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:09:08.980Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:09:08.980Z"
+      }
+    },
+    {
+      "name": "Cinematic Drones",
+      "_id": {
+        "$oid": "6754652782bfb9f525c04750"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:09:27.953Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:09:27.953Z"
+      }
+    },
+    {
+      "name": "GPS Drones",
+      "_id": {
+        "$oid": "6754653282bfb9f525c04773"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:09:38.425Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:09:38.425Z"
+      }
+    },
+    {
+      "name": "Foldable Drones",
+      "_id": {
+        "$oid": "6754654482bfb9f525c04798"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:09:56.677Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:09:56.677Z"
+      }
+    },
+    {
+      "name": "Agricultural Drones",
+      "_id": {
+        "$oid": "6754654d82bfb9f525c047bf"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:10:05.826Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:10:05.826Z"
+      }
+    },
+    {
+      "name": "Under Water Drones",
+      "_id": {
+        "$oid": "6754655582bfb9f525c047e8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:10:13.966Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:10:13.966Z"
+      }
+    },
+    {
+      "name": "Brushless Motors",
+      "_id": {
+        "$oid": "6754655f82bfb9f525c04813"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:10:23.619Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:10:23.619Z"
+      }
+    },
+    {
+      "name": "Surveillance Drones",
+      "_id": {
+        "$oid": "6754656a82bfb9f525c04840"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:10:34.505Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:10:34.505Z"
+      }
+    },
+    {
+      "name": "Hexacopters",
+      "_id": {
+        "$oid": "6754657682bfb9f525c0486f"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:10:46.613Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:10:46.613Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:08:41.019Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:10:46.613Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "6754658382bfb9f525c04896"
+  },
+  "name": "Men's",
+  "subcategories": [
+    {
+      "name": "Dresses",
+      "_id": {
+        "$oid": "6754658d82bfb9f525c048bd"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:11:09.391Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:11:09.391Z"
+      }
+    },
+    {
+      "name": "Bottoms",
+      "_id": {
+        "$oid": "6754659782bfb9f525c048e6"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:11:19.247Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:11:19.247Z"
+      }
+    },
+    {
+      "name": "Outerwear",
+      "_id": {
+        "$oid": "6754659f82bfb9f525c04911"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:11:27.300Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:11:27.300Z"
+      }
+    },
+    {
+      "name": "Sports Wear",
+      "_id": {
+        "$oid": "675465ab82bfb9f525c0493e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:11:39.861Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:11:39.861Z"
+      }
+    },
+    {
+      "name": "Innerwear",
+      "_id": {
+        "$oid": "675465b882bfb9f525c0496d"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:11:52.645Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:11:52.645Z"
+      }
+    },
+    {
+      "name": "Sleepwear",
+      "_id": {
+        "$oid": "675465c182bfb9f525c0499e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:12:01.628Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:12:01.628Z"
+      }
+    },
+    {
+      "name": "Accessories",
+      "_id": {
+        "$oid": "675465c982bfb9f525c049d1"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:12:09.905Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:12:09.905Z"
+      }
+    },
+    {
+      "name": "Jacket",
+      "_id": {
+        "$oid": "675465db82bfb9f525c04a06"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:12:27.485Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:12:27.485Z"
+      }
+    },
+    {
+      "name": "Ethnic Wear",
+      "_id": {
+        "$oid": "675465e982bfb9f525c04a3d"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:12:41.636Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:12:41.636Z"
+      }
+    },
+    {
+      "name": "Suits and Blazers",
+      "_id": {
+        "$oid": "67546aefb5f3aeb2a6cfcd58"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:34:07.043Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:34:07.043Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:10:59.799Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:34:07.043Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "675465f582bfb9f525c04a6d"
+  },
+  "name": "Women's",
+  "subcategories": [
+    {
+      "name": "Dresses",
+      "_id": {
+        "$oid": "675465fc82bfb9f525c04a9d"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:13:00.997Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:13:00.997Z"
+      }
+    },
+    {
+      "name": "Bottoms",
+      "_id": {
+        "$oid": "6754660382bfb9f525c04acf"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:13:07.680Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:13:07.680Z"
+      }
+    },
+    {
+      "name": "Outerwear",
+      "_id": {
+        "$oid": "6754660982bfb9f525c04b03"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:13:13.828Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:13:13.828Z"
+      }
+    },
+    {
+      "name": "Sports Wear",
+      "_id": {
+        "$oid": "6754661382bfb9f525c04b39"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:13:23.287Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:13:23.287Z"
+      }
+    },
+    {
+      "name": "Innerwear",
+      "_id": {
+        "$oid": "6754662582bfb9f525c04b71"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:13:41.783Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:13:41.783Z"
+      }
+    },
+    {
+      "name": "Sleepwear",
+      "_id": {
+        "$oid": "6754662c82bfb9f525c04bab"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:13:48.558Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:13:48.558Z"
+      }
+    },
+    {
+      "name": "Accessories",
+      "_id": {
+        "$oid": "6754663382bfb9f525c04be7"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:13:55.042Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:13:55.042Z"
+      }
+    },
+    {
+      "name": "Footwear",
+      "_id": {
+        "$oid": "6754663a82bfb9f525c04c25"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:14:02.033Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:14:02.033Z"
+      }
+    },
+    {
+      "name": "Ethnic Wear",
+      "_id": {
+        "$oid": "6754664482bfb9f525c04c65"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:14:12.402Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:14:12.402Z"
+      }
+    },
+    {
+      "name": "Jacket",
+      "_id": {
+        "$oid": "6754664e82bfb9f525c04ca7"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:14:22.036Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:14:22.036Z"
+      }
+    },
+    {
+      "name": "Tops",
+      "_id": {
+        "$oid": "6754665482bfb9f525c04ceb"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:14:28.302Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:14:28.302Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:12:53.302Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:14:28.303Z"
+  },
+  "__v": 11
+},
+{
+  "_id": {
+    "$oid": "6754666782bfb9f525c04d26"
+  },
+  "name": "Men's Shoes",
+  "subcategories": [
+    {
+      "name": "Sneakers",
+      "_id": {
+        "$oid": "6754667482bfb9f525c04d61"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:15:00.034Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:15:00.034Z"
+      }
+    },
+    {
+      "name": "Formal Shoes",
+      "_id": {
+        "$oid": "6754667f82bfb9f525c04d9e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:15:11.297Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:15:11.297Z"
+      }
+    },
+    {
+      "name": "Casual Shoes",
+      "_id": {
+        "$oid": "6754668982bfb9f525c04ddd"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:15:21.088Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:15:21.088Z"
+      }
+    },
+    {
+      "name": "Boots",
+      "_id": {
+        "$oid": "6754668f82bfb9f525c04e1e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:15:27.794Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:15:27.794Z"
+      }
+    },
+    {
+      "name": "Loafers",
+      "_id": {
+        "$oid": "6754669782bfb9f525c04e61"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:15:35.046Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:15:35.046Z"
+      }
+    },
+    {
+      "name": "Sandals",
+      "_id": {
+        "$oid": "675467ddb5f3aeb2a6cfbb75"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:21:01.862Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:21:01.862Z"
+      }
+    },
+    {
+      "name": "Athletic Shoes",
+      "_id": {
+        "$oid": "6754686ab5f3aeb2a6cfbbbc"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:23:22.994Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:23:22.994Z"
+      }
+    },
+    {
+      "name": "Slippers",
+      "_id": {
+        "$oid": "67546874b5f3aeb2a6cfbc05"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:23:32.377Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:23:32.377Z"
+      }
+    },
+    {
+      "name": "Derby Shoes",
+      "_id": {
+        "$oid": "6754687db5f3aeb2a6cfbc50"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:23:41.733Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:23:41.733Z"
+      }
+    },
+    {
+      "name": "Monk Strap Shoes",
+      "_id": {
+        "$oid": "67546888b5f3aeb2a6cfbc9d"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:23:52.336Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:23:52.336Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:14:47.183Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:23:52.336Z"
+  },
+  "__v": 16
+},
+{
+  "_id": {
+    "$oid": "67546896b5f3aeb2a6cfbce2"
+  },
+  "name": "Women's Shoes",
+  "subcategories": [
+    {
+      "name": "Heels",
+      "_id": {
+        "$oid": "675468a2b5f3aeb2a6cfbd27"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:24:18.264Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:24:18.264Z"
+      }
+    },
+    {
+      "name": "Flats",
+      "_id": {
+        "$oid": "675468a9b5f3aeb2a6cfbd6e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:24:25.942Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:24:25.942Z"
+      }
+    },
+    {
+      "name": "Sandals",
+      "_id": {
+        "$oid": "675468b1b5f3aeb2a6cfbdb7"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:24:33.331Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:24:33.331Z"
+      }
+    },
+    {
+      "name": "Sneakers",
+      "_id": {
+        "$oid": "675468bbb5f3aeb2a6cfbe02"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:24:43.332Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:24:43.332Z"
+      }
+    },
+    {
+      "name": "Boots",
+      "_id": {
+        "$oid": "675468c3b5f3aeb2a6cfbe4f"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:24:51.287Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:24:51.287Z"
+      }
+    },
+    {
+      "name": "Wedges",
+      "_id": {
+        "$oid": "675468ccb5f3aeb2a6cfbe9e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:25:00.411Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:25:00.411Z"
+      }
+    },
+    {
+      "name": "Ballet Flats",
+      "_id": {
+        "$oid": "675468d8b5f3aeb2a6cfbeef"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:25:12.304Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:25:12.304Z"
+      }
+    },
+    {
+      "name": "Slippers",
+      "_id": {
+        "$oid": "675468dfb5f3aeb2a6cfbf42"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:25:19.931Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:25:19.931Z"
+      }
+    },
+    {
+      "name": "Athletic Shoes",
+      "_id": {
+        "$oid": "675468eab5f3aeb2a6cfbf97"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:25:30.182Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:25:30.182Z"
+      }
+    },
+    {
+      "name": "Mules",
+      "_id": {
+        "$oid": "675468f0b5f3aeb2a6cfbfee"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:25:36.882Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:25:36.882Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:24:06.956Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:25:36.882Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "675468f8b5f3aeb2a6cfc03d"
+  },
+  "name": "Electronics",
+  "subcategories": [
+    {
+      "name": "Smartphones",
+      "_id": {
+        "$oid": "67546906b5f3aeb2a6cfc08c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:25:58.553Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:25:58.553Z"
+      }
+    },
+    {
+      "name": "Laptops",
+      "_id": {
+        "$oid": "6754690db5f3aeb2a6cfc0dd"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:26:05.460Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:26:05.460Z"
+      }
+    },
+    {
+      "name": "Tablets",
+      "_id": {
+        "$oid": "67546913b5f3aeb2a6cfc130"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:26:11.711Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:26:11.711Z"
+      }
+    },
+    {
+      "name": "Headphones",
+      "_id": {
+        "$oid": "67546919b5f3aeb2a6cfc185"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:26:17.874Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:26:17.874Z"
+      }
+    },
+    {
+      "name": "Smartwatches",
+      "_id": {
+        "$oid": "6754692ab5f3aeb2a6cfc1dc"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:26:34.181Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:26:34.181Z"
+      }
+    },
+    {
+      "name": "Cameras",
+      "_id": {
+        "$oid": "67546930b5f3aeb2a6cfc235"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:26:40.985Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:26:40.985Z"
+      }
+    },
+    {
+      "name": "Drones",
+      "_id": {
+        "$oid": "67546937b5f3aeb2a6cfc290"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:26:47.052Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:26:47.052Z"
+      }
+    },
+    {
+      "name": "Gaming Consoles",
+      "_id": {
+        "$oid": "6754693eb5f3aeb2a6cfc2ed"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:26:54.970Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:26:54.970Z"
+      }
+    },
+    {
+      "name": "Televisions",
+      "_id": {
+        "$oid": "67546945b5f3aeb2a6cfc34c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:27:01.900Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:27:01.900Z"
+      }
+    },
+    {
+      "name": "Bluetooth Speakers",
+      "_id": {
+        "$oid": "67546951b5f3aeb2a6cfc3ad"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:27:13.225Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:27:13.225Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:25:44.429Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:27:13.225Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546966b5f3aeb2a6cfc406"
+  },
+  "name": "Home Appliances",
+  "subcategories": [
+    {
+      "name": "Refrigerators",
+      "_id": {
+        "$oid": "6754696eb5f3aeb2a6cfc45f"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:27:42.580Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:27:42.580Z"
+      }
+    },
+    {
+      "name": "Washing Machines",
+      "_id": {
+        "$oid": "67546977b5f3aeb2a6cfc4ba"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:27:51.284Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:27:51.284Z"
+      }
+    },
+    {
+      "name": "Microwaves",
+      "_id": {
+        "$oid": "6754697eb5f3aeb2a6cfc517"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:27:58.407Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:27:58.407Z"
+      }
+    },
+    {
+      "name": "Air Conditioners",
+      "_id": {
+        "$oid": "67546991b5f3aeb2a6cfc576"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:28:17.051Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:28:17.051Z"
+      }
+    },
+    {
+      "name": "Vacuum Cleaners",
+      "_id": {
+        "$oid": "6754699db5f3aeb2a6cfc5d7"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:28:29.866Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:28:29.866Z"
+      }
+    },
+    {
+      "name": "Dishwashers",
+      "_id": {
+        "$oid": "675469a7b5f3aeb2a6cfc63a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:28:39.810Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:28:39.810Z"
+      }
+    },
+    {
+      "name": "Coffee Makers",
+      "_id": {
+        "$oid": "675469b1b5f3aeb2a6cfc69f"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:28:49.709Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:28:49.709Z"
+      }
+    },
+    {
+      "name": "Water Heaters",
+      "_id": {
+        "$oid": "675469bbb5f3aeb2a6cfc706"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:28:59.488Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:28:59.488Z"
+      }
+    },
+    {
+      "name": "Blenders",
+      "_id": {
+        "$oid": "675469c6b5f3aeb2a6cfc76f"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:29:10.163Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:29:10.163Z"
+      }
+    },
+    {
+      "name": "Air Purifiers",
+      "_id": {
+        "$oid": "675469cfb5f3aeb2a6cfc7da"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:29:19.359Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:29:19.359Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:27:34.238Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:29:19.359Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546a12b5f3aeb2a6cfc83d"
+  },
+  "name": "Furnitures",
+  "subcategories": [
+    {
+      "name": "Sofas",
+      "_id": {
+        "$oid": "67546a1db5f3aeb2a6cfc8a0"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:30:37.383Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:30:37.383Z"
+      }
+    },
+    {
+      "name": "Beds",
+      "_id": {
+        "$oid": "67546a25b5f3aeb2a6cfc905"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:30:45.382Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:30:45.382Z"
+      }
+    },
+    {
+      "name": "Dining Tables",
+      "_id": {
+        "$oid": "67546a31b5f3aeb2a6cfc96c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:30:57.423Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:30:57.423Z"
+      }
+    },
+    {
+      "name": "Chairs",
+      "_id": {
+        "$oid": "67546a38b5f3aeb2a6cfc9d5"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:31:04.425Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:31:04.425Z"
+      }
+    },
+    {
+      "name": "Wardrobes",
+      "_id": {
+        "$oid": "67546a40b5f3aeb2a6cfca40"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:31:12.164Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:31:12.164Z"
+      }
+    },
+    {
+      "name": "Coffee Tables",
+      "_id": {
+        "$oid": "67546a4cb5f3aeb2a6cfcaad"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:31:24.055Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:31:24.055Z"
+      }
+    },
+    {
+      "name": "Office Desks",
+      "_id": {
+        "$oid": "67546a54b5f3aeb2a6cfcb1c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:31:32.777Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:31:32.777Z"
+      }
+    },
+    {
+      "name": "Bookshelves",
+      "_id": {
+        "$oid": "67546a66b5f3aeb2a6cfcb8d"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:31:50.335Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:31:50.335Z"
+      }
+    },
+    {
+      "name": "TV Stands",
+      "_id": {
+        "$oid": "67546a88b5f3aeb2a6cfcc00"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:32:24.350Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:32:24.350Z"
+      }
+    },
+    {
+      "name": "Recliners",
+      "_id": {
+        "$oid": "67546a92b5f3aeb2a6cfcc75"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:32:34.429Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:32:34.429Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:30:26.257Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:32:34.429Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546aa7b5f3aeb2a6cfcce2"
+  },
+  "name": "Smart home & Fitness",
+  "subcategories": [
+    {
+      "name": "Smart LED Bulbs",
+      "_id": {
+        "$oid": "67546b72b5f3aeb2a6cfcdc6"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:36:18.562Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:36:18.562Z"
+      }
+    },
+    {
+      "name": "Yoga Mats",
+      "_id": {
+        "$oid": "67546b92b5f3aeb2a6cfce36"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:36:50.246Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:36:50.246Z"
+      }
+    },
+    {
+      "name": "Smart Light Strips",
+      "_id": {
+        "$oid": "67546b9fb5f3aeb2a6cfcea8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:37:03.303Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:37:03.303Z"
+      }
+    },
+    {
+      "name": "Resistance Bands",
+      "_id": {
+        "$oid": "67546bacb5f3aeb2a6cfcf1c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:37:16.003Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:37:16.003Z"
+      }
+    },
+    {
+      "name": "Smart Ceiling Lights",
+      "_id": {
+        "$oid": "67546c26b5f3aeb2a6cfcf92"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:39:18.208Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:39:18.208Z"
+      }
+    },
+    {
+      "name": "Dumbbells",
+      "_id": {
+        "$oid": "67546c34b5f3aeb2a6cfd00a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:39:32.505Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:39:32.505Z"
+      }
+    },
+    {
+      "name": "Motion-Sensor Lights",
+      "_id": {
+        "$oid": "67546c41b5f3aeb2a6cfd084"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:39:45.725Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:39:45.725Z"
+      }
+    },
+    {
+      "name": "Fitness Trackers",
+      "_id": {
+        "$oid": "67546c4db5f3aeb2a6cfd100"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:39:57.851Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:39:57.851Z"
+      }
+    },
+    {
+      "name": "Solar-Powered Lights",
+      "_id": {
+        "$oid": "67546c5fb5f3aeb2a6cfd17e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:40:15.752Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:40:15.752Z"
+      }
+    },
+    {
+      "name": "Treadmills",
+      "_id": {
+        "$oid": "67546c6cb5f3aeb2a6cfd1fe"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:40:28.761Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:40:28.761Z"
+      }
+    },
+    {
+      "name": "Smart Table Lamps",
+      "_id": {
+        "$oid": "67546c7ab5f3aeb2a6cfd280"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:40:42.606Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:40:42.606Z"
+      }
+    },
+    {
+      "name": "Jump Ropes",
+      "_id": {
+        "$oid": "67546c84b5f3aeb2a6cfd304"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:40:52.882Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:40:52.882Z"
+      }
+    },
+    {
+      "name": "Outdoor Smart Lights",
+      "_id": {
+        "$oid": "67546c91b5f3aeb2a6cfd38a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:41:05.285Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:41:05.285Z"
+      }
+    },
+    {
+      "name": "Foam Rollers",
+      "_id": {
+        "$oid": "67546ca4b5f3aeb2a6cfd412"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:41:24.031Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:41:24.031Z"
+      }
+    },
+    {
+      "name": "Voice-Controlled Lights",
+      "_id": {
+        "$oid": "67546cb2b5f3aeb2a6cfd49c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:41:38.312Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:41:38.312Z"
+      }
+    },
+    {
+      "name": "Balance Balls",
+      "_id": {
+        "$oid": "67546cc4b5f3aeb2a6cfd528"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:41:56.478Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:41:56.478Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:32:55.093Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:41:56.479Z"
+  },
+  "__v": 16
+},
+{
+  "_id": {
+    "$oid": "67546d00b5f3aeb2a6cfd7d6"
+  },
+  "name": "Beauty care",
+  "subcategories": [
+    {
+      "name": "Skincare Devices",
+      "_id": {
+        "$oid": "67546d0db5f3aeb2a6cfd858"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:43:09.185Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:43:09.185Z"
+      }
+    },
+    {
+      "name": "Makeup Brushes and Tools",
+      "_id": {
+        "$oid": "67546d17b5f3aeb2a6cfd8dc"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:43:19.714Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:43:19.714Z"
+      }
+    },
+    {
+      "name": "LED Beauty Masks",
+      "_id": {
+        "$oid": "67546d1fb5f3aeb2a6cfd962"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:43:27.283Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:43:27.283Z"
+      }
+    },
+    {
+      "name": "Electric Nail Files",
+      "_id": {
+        "$oid": "67546d28b5f3aeb2a6cfd9ea"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:43:36.582Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:43:36.582Z"
+      }
+    },
+    {
+      "name": "Eyelash Curlers",
+      "_id": {
+        "$oid": "67546d2fb5f3aeb2a6cfda74"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:43:43.510Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:43:43.510Z"
+      }
+    },
+    {
+      "name": "Hair Removal Devices",
+      "_id": {
+        "$oid": "67546d37b5f3aeb2a6cfdb00"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:43:51.060Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:43:51.060Z"
+      }
+    },
+    {
+      "name": "Massage Tools",
+      "_id": {
+        "$oid": "67546d3eb5f3aeb2a6cfdb8e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:43:58.195Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:43:58.195Z"
+      }
+    },
+    {
+      "name": "Face Rollers (jade/stone)",
+      "_id": {
+        "$oid": "67546d4ab5f3aeb2a6cfdc1e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:44:10.020Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:44:10.020Z"
+      }
+    },
+    {
+      "name": "Compact Mirrors with LED Lights",
+      "_id": {
+        "$oid": "67546d5eb5f3aeb2a6cfdcb0"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:44:30.120Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:44:30.120Z"
+      }
+    },
+    {
+      "name": "Lip Plumping Devices",
+      "_id": {
+        "$oid": "67546d6cb5f3aeb2a6cfdd44"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:44:44.647Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:44:44.647Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:42:56.261Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:44:44.647Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546d7fb5f3aeb2a6cfddd0"
+  },
+  "name": "Pets",
+  "subcategories": [
+    {
+      "name": "Pet Beds",
+      "_id": {
+        "$oid": "67546d8eb5f3aeb2a6cfde5c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:45:18.416Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:45:18.416Z"
+      }
+    },
+    {
+      "name": "Automatic Feeders",
+      "_id": {
+        "$oid": "67546d99b5f3aeb2a6cfdeea"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:45:29.350Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:45:29.350Z"
+      }
+    },
+    {
+      "name": "Pet Carriers",
+      "_id": {
+        "$oid": "67546da2b5f3aeb2a6cfdf7a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:45:38.153Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:45:38.153Z"
+      }
+    },
+    {
+      "name": "Pet Toys",
+      "_id": {
+        "$oid": "67546daeb5f3aeb2a6cfe00c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:45:50.309Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:45:50.309Z"
+      }
+    },
+    {
+      "name": "Grooming Tools",
+      "_id": {
+        "$oid": "67546db8b5f3aeb2a6cfe0a0"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:46:00.967Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:46:00.967Z"
+      }
+    },
+    {
+      "name": "Smart Pet Collars",
+      "_id": {
+        "$oid": "67546dc1b5f3aeb2a6cfe136"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:46:09.399Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:46:09.399Z"
+      }
+    },
+    {
+      "name": "Pet Cameras",
+      "_id": {
+        "$oid": "67546dc9b5f3aeb2a6cfe1ce"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:46:17.896Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:46:17.896Z"
+      }
+    },
+    {
+      "name": "Litter Boxes",
+      "_id": {
+        "$oid": "67546dd5b5f3aeb2a6cfe268"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:46:29.521Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:46:29.521Z"
+      }
+    },
+    {
+      "name": "Training Pads",
+      "_id": {
+        "$oid": "67546ddeb5f3aeb2a6cfe304"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:46:38.141Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:46:38.141Z"
+      }
+    },
+    {
+      "name": "Pet Clothing",
+      "_id": {
+        "$oid": "67546de7b5f3aeb2a6cfe3a2"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:46:47.449Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:46:47.449Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:45:03.927Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:46:47.450Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546e0fb5f3aeb2a6cfe438"
+  },
+  "name": "Hair and Accessories",
+  "subcategories": [
+    {
+      "name": "Hair Dryers",
+      "_id": {
+        "$oid": "67546e1db5f3aeb2a6cfe4ce"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:47:41.389Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:47:41.389Z"
+      }
+    },
+    {
+      "name": "Hair Straighteners",
+      "_id": {
+        "$oid": "67546e28b5f3aeb2a6cfe566"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:47:52.510Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:47:52.510Z"
+      }
+    },
+    {
+      "name": "Curling Irons",
+      "_id": {
+        "$oid": "67546e35b5f3aeb2a6cfe600"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:48:05.052Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:48:05.052Z"
+      }
+    },
+    {
+      "name": "Hot Air Brushes",
+      "_id": {
+        "$oid": "67546e40b5f3aeb2a6cfe69c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:48:16.184Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:48:16.184Z"
+      }
+    },
+    {
+      "name": "Hair Clippers",
+      "_id": {
+        "$oid": "67546e4bb5f3aeb2a6cfe73a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:48:27.046Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:48:27.046Z"
+      }
+    },
+    {
+      "name": "Scalp Massagers",
+      "_id": {
+        "$oid": "67546e5fb5f3aeb2a6cfe7da"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:48:47.960Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:48:47.960Z"
+      }
+    },
+    {
+      "name": "Hair Styling Waxes and Gels",
+      "_id": {
+        "$oid": "67546e72b5f3aeb2a6cfe87c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:49:06.689Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:49:06.689Z"
+      }
+    },
+    {
+      "name": "Hair Accessories",
+      "_id": {
+        "$oid": "67546e90b5f3aeb2a6cfe920"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:49:36.949Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:49:36.949Z"
+      }
+    },
+    {
+      "name": "Heat-Protecting Sprays",
+      "_id": {
+        "$oid": "67546ea2b5f3aeb2a6cfe9c6"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:49:54.907Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:49:54.907Z"
+      }
+    },
+    {
+      "name": "Hair Serums",
+      "_id": {
+        "$oid": "67546eadb5f3aeb2a6cfea6e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:50:05.928Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:50:05.928Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:47:27.510Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:50:05.929Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546ec0b5f3aeb2a6cfeb0e"
+  },
+  "name": "Auto Accessories",
+  "subcategories": [
+    {
+      "name": "Car Phone Holders",
+      "_id": {
+        "$oid": "67546ec8b5f3aeb2a6cfebae"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:50:32.976Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:50:32.976Z"
+      }
+    },
+    {
+      "name": "Dash Cams",
+      "_id": {
+        "$oid": "67546ed1b5f3aeb2a6cfec50"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:50:41.762Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:50:41.762Z"
+      }
+    },
+    {
+      "name": "Car Vacuum Cleaners",
+      "_id": {
+        "$oid": "67546edbb5f3aeb2a6cfecf4"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:50:51.874Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:50:51.874Z"
+      }
+    },
+    {
+      "name": "Seat Covers",
+      "_id": {
+        "$oid": "67546ee3b5f3aeb2a6cfed9a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:50:59.816Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:50:59.816Z"
+      }
+    },
+    {
+      "name": "Car Air Purifiers",
+      "_id": {
+        "$oid": "67546eebb5f3aeb2a6cfee42"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:51:07.670Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:51:07.670Z"
+      }
+    },
+    {
+      "name": "Jump Starters",
+      "_id": {
+        "$oid": "67546ef5b5f3aeb2a6cfeeec"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:51:17.167Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:51:17.167Z"
+      }
+    },
+    {
+      "name": "Tire Pressure Monitoring Systems",
+      "_id": {
+        "$oid": "67546efdb5f3aeb2a6cfef98"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:51:25.399Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:51:25.399Z"
+      }
+    },
+    {
+      "name": "Portable Refrigerators",
+      "_id": {
+        "$oid": "67546f0ab5f3aeb2a6cff046"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:51:38.118Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:51:38.118Z"
+      }
+    },
+    {
+      "name": "LED Interior Lights",
+      "_id": {
+        "$oid": "67546f10b5f3aeb2a6cff0f6"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:51:44.856Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:51:44.856Z"
+      }
+    },
+    {
+      "name": "Roof Racks",
+      "_id": {
+        "$oid": "67546f1bb5f3aeb2a6cff1a8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:51:55.771Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:51:55.771Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:50:24.514Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:51:55.771Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546f28b5f3aeb2a6cff252"
+  },
+  "name": "Kitchen's Gadget",
+  "subcategories": [
+    {
+      "name": "Electric Food Processors",
+      "_id": {
+        "$oid": "67546f40b5f3aeb2a6cff2fc"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:52:32.571Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:52:32.571Z"
+      }
+    },
+    {
+      "name": "Air Fryers",
+      "_id": {
+        "$oid": "67546f50b5f3aeb2a6cff3a8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:52:48.839Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:52:48.839Z"
+      }
+    },
+    {
+      "name": "Electric Kettles",
+      "_id": {
+        "$oid": "67546f5eb5f3aeb2a6cff456"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:53:02.746Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:53:02.746Z"
+      }
+    },
+    {
+      "name": "Immersion Blenders",
+      "_id": {
+        "$oid": "67546f6cb5f3aeb2a6cff506"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:53:16.680Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:53:16.680Z"
+      }
+    },
+    {
+      "name": "Garlic Presses",
+      "_id": {
+        "$oid": "67546f84b5f3aeb2a6cff5b8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:53:40.555Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:53:40.555Z"
+      }
+    },
+    {
+      "name": "Digital Kitchen Scales",
+      "_id": {
+        "$oid": "67546f97b5f3aeb2a6cff66c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:53:59.380Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:53:59.380Z"
+      }
+    },
+    {
+      "name": "Vegetable Spiralizers",
+      "_id": {
+        "$oid": "67546fa1b5f3aeb2a6cff722"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:54:09.645Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:54:09.645Z"
+      }
+    },
+    {
+      "name": "Magnetic Knife Holders",
+      "_id": {
+        "$oid": "67546fabb5f3aeb2a6cff7da"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:54:19.464Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:54:19.464Z"
+      }
+    },
+    {
+      "name": "Meat Thermometers",
+      "_id": {
+        "$oid": "67546fb5b5f3aeb2a6cff894"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:54:29.407Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:54:29.407Z"
+      }
+    },
+    {
+      "name": "Reusable Food Storage Bags",
+      "_id": {
+        "$oid": "67546fc1b5f3aeb2a6cff950"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:54:41.233Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:54:41.233Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:52:08.784Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:54:41.234Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546fcbb5f3aeb2a6cffa04"
+  },
+  "name": "Home Decor",
+  "subcategories": [
+    {
+      "name": "Wall Art and Paintings",
+      "_id": {
+        "$oid": "67546fe4b5f3aeb2a6cffb6c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:55:16.112Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:55:16.112Z"
+      }
+    },
+    {
+      "name": "Decorative Mirrors",
+      "_id": {
+        "$oid": "67546ff5b5f3aeb2a6cffc22"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:55:33.395Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:55:33.395Z"
+      }
+    },
+    {
+      "name": "Indoor Plants",
+      "_id": {
+        "$oid": "67547000b5f3aeb2a6cffcda"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:55:44.350Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:55:44.350Z"
+      }
+    },
+    {
+      "name": "Rugs and Carpets",
+      "_id": {
+        "$oid": "6754700cb5f3aeb2a6cffd94"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:55:56.280Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:55:56.280Z"
+      }
+    },
+    {
+      "name": "Throw Pillows and Covers",
+      "_id": {
+        "$oid": "67547017b5f3aeb2a6cffe50"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:56:07.090Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:56:07.090Z"
+      }
+    },
+    {
+      "name": "Candle Holders",
+      "_id": {
+        "$oid": "67547029b5f3aeb2a6cfff0e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:56:25.716Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:56:25.716Z"
+      }
+    },
+    {
+      "name": "Photo Frames",
+      "_id": {
+        "$oid": "67547034b5f3aeb2a6cfffce"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:56:36.577Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:56:36.577Z"
+      }
+    },
+    {
+      "name": "String Lights",
+      "_id": {
+        "$oid": "6754703fb5f3aeb2a6d00090"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:56:47.545Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:56:47.545Z"
+      }
+    },
+    {
+      "name": "Decorative Clocks",
+      "_id": {
+        "$oid": "6754704ab5f3aeb2a6d00154"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:56:58.860Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:56:58.860Z"
+      }
+    },
+    {
+      "name": "Vases and Figurines",
+      "_id": {
+        "$oid": "67547061b5f3aeb2a6d0021a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:57:21.048Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:57:21.048Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:54:51.734Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T15:57:21.048Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67546fd4b5f3aeb2a6cffab8"
+  },
+  "name": "Phone Accessories",
+  "subcategories": [
+    {
+      "name": "Phone Cases",
+      "_id": {
+        "$oid": "67547070b5f3aeb2a6d002d8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:57:36.166Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:57:36.166Z"
+      }
+    },
+    {
+      "name": "Screen Protectors",
+      "_id": {
+        "$oid": "6754707cb5f3aeb2a6d00398"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:57:48.579Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:57:48.579Z"
+      }
+    },
+    {
+      "name": "Wireless Chargers",
+      "_id": {
+        "$oid": "6754708fb5f3aeb2a6d0045a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:58:07.860Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:58:07.860Z"
+      }
+    },
+    {
+      "name": "Power Banks",
+      "_id": {
+        "$oid": "6754709cb5f3aeb2a6d0051e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:58:20.586Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:58:20.586Z"
+      }
+    },
+    {
+      "name": "Charging Cables",
+      "_id": {
+        "$oid": "675470a8b5f3aeb2a6d005e4"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:58:32.116Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:58:32.116Z"
+      }
+    },
+    {
+      "name": "PopSockets and Grips",
+      "_id": {
+        "$oid": "675470b4b5f3aeb2a6d006ac"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:58:44.776Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:58:44.776Z"
+      }
+    },
+    {
+      "name": "Phone Camera Lenses",
+      "_id": {
+        "$oid": "675470bfb5f3aeb2a6d00776"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:58:55.583Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:58:55.583Z"
+      }
+    },
+    {
+      "name": "Bluetooth Earbuds and Headsets",
+      "_id": {
+        "$oid": "675470cdb5f3aeb2a6d00842"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:59:09.771Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:59:09.771Z"
+      }
+    },
+    {
+      "name": "Car Phone Mounts",
+      "_id": {
+        "$oid": "675470d8b5f3aeb2a6d00910"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:59:20.123Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:59:20.123Z"
+      }
+    },
+    {
+      "name": "Magnetic Mounts",
+      "_id": {
+        "$oid": "675470ebb5f3aeb2a6d009e0"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:59:39.344Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:59:39.344Z"
+      }
+    },
+    {
+      "name": "Portable Mini Tripods",
+      "_id": {
+        "$oid": "675470fcb5f3aeb2a6d00ab2"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T15:59:56.581Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T15:59:56.581Z"
+      }
+    },
+    {
+      "name": "Phone Cleaning Kits",
+      "_id": {
+        "$oid": "67547106b5f3aeb2a6d00b86"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:00:06.812Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:00:06.812Z"
+      }
+    },
+    {
+      "name": "Stylus Pens",
+      "_id": {
+        "$oid": "67547119b5f3aeb2a6d00c5c"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:00:25.429Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:00:25.429Z"
+      }
+    },
+    {
+      "name": "Gaming Controllers for Phones",
+      "_id": {
+        "$oid": "6754712ab5f3aeb2a6d00d34"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:00:42.446Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:00:42.446Z"
+      }
+    },
+    {
+      "name": "Phone Wallets",
+      "_id": {
+        "$oid": "6754713ab5f3aeb2a6d00e0e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:00:58.568Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:00:58.568Z"
+      }
+    },
+    {
+      "name": "Smartphone Cooling Fans",
+      "_id": {
+        "$oid": "6754714bb5f3aeb2a6d00eea"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:01:15.318Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:01:15.318Z"
+      }
+    },
+    {
+      "name": "Expandable Memory Cards",
+      "_id": {
+        "$oid": "6754715bb5f3aeb2a6d00fc8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:01:31.690Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:01:31.690Z"
+      }
+    },
+    {
+      "name": "Armbands for Fitness",
+      "_id": {
+        "$oid": "6754716cb5f3aeb2a6d010a8"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:01:48.139Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:01:48.139Z"
+      }
+    },
+    {
+      "name": "Wireless Docking Stations",
+      "_id": {
+        "$oid": "67547187b5f3aeb2a6d0118a"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:02:15.364Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:02:15.364Z"
+      }
+    },
+    {
+      "name": "LED Selfie Rings and Lights",
+      "_id": {
+        "$oid": "67547196b5f3aeb2a6d0126e"
+      },
+      "createdAt": {
+        "$date": "2024-12-07T16:02:30.021Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-07T16:02:30.021Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-07T15:55:00.775Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T16:02:30.021Z"
+  },
+  "__v": 20
+}]

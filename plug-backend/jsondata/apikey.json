@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "plugspace-app",
+  "private_key_id": "444b7d3a5cd72acbef5504dd8a44e3a80e352ac2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDhk88Porhz5K1/\n06NxDMdlcQykO0/oetKQEfU3Sp5GmohttnYXIgesCsiNNh0ZapE0UHigoUTwFaTI\n54PD1jj/UdSWihNcoxud2O54ikmHRwJayryniphb+AUTF9BFO+Oo0oFNNMttvOu1\n8fq2b8MH+au4pszhFQZXigqK8J50W3SNgZj2fzHIXjhiwfVeY8mQv3EINF7BQeUV\nrTRMpoKK8DmJXwk+/L6g5SK+nePW0EzzOkUc44V2TH9p5s6DDzLDX2Js6wgYgZbx\njoe0cpbpu8EOxF8gw5J4wD04y4NO3Vb35rC/Jb1pEKVn81T7FsAVDWWGXX+qw83K\nAhGQy4ULAgMBAAECggEAFjde+Ly/ataWSdUXrz4hczmvk4st4wkZrMu/+VqVfQGi\nNx/1wHB/DfAf8VxngEXRGDRmtPc9GWIgURMQFJ0IDwlJpSvjHUgJI8ImNmP0OukA\n790wuFV7jO8/3LIHNpJf6RQWXPq6oEuvcUNsPESEkkgCJBT1b6OI9N0pDacGDBJ4\nXGCwCUurXZ/MTzSb7u+RiPk1014KzlIY83/rgR1l9uaPMDfIwKd1RVpvfA1l7dcO\n6DvNkoehu9KPbdTTILAty3eEDxwCQyRYyUvhOIIyk8jOcP7sQ6I7CuRz0t3LDSHU\nW8JKJYT881CjpHF+LA92nbn9SbSm5pXFtyYAsJmYJQKBgQD/FU8sqbwW2IRWyFXf\nO8EhnP3NVAuFJ9C4+mi6Umoa9ShSvBc8TsQw9n9A52dzqy2nsRFk/5/hRAd+x7kS\nxSD/Aq5bUjGJibBLTwR4WmWgoD40nioaIZCTtmXJNQ+GuCn5Iwj0OGyd/7SsGRBo\nEM3AZh4Dq0rRy5NFWqWsF0vrJwKBgQDiY1o/UtKB8q4yKDfOXVryp4QNTSl1ODvV\n6qWMt23C2xwKoC+CMoIM7e9CQpVAY0gvm87PZz79jqauPU620sLFzZvtKQo7YkXE\nOOmBqa0EAswNEod1lLTNfml/FmkdnEcmAN2U3x/86cg2veA5TXSKeU66z3lhX7A7\nxWEzscSVfQKBgQD9Q/0ejVCRJl0PhU2tnbi+VQ+yRJZDmSql3wsIpDdxmKR2sQYo\n/NPTAYuLt7aBpB5qd2ab7yqhEViXylm5hzyhtdnEFjHVK35853G6xZZOC4x31epb\nk6Pm5ZzeT+6ghk42bVDAmx1NKswKa8BccwK22y1F21coQoZwv/Xqjh701QKBgQCr\n5irpuFbVi1NQDI/LZ8GeTSqM+xFGy6tLlD+eaM20TrGtM9K/NuDfNnAdTPeNi5WN\naO6RN+FxoLbZyP2S/tgcYDJM04PMcaNuCpTr+s3AJOuR5Ybr9j2PZ7RtZrPsYvT3\nW2LlHsNoRI/dWTH/8NtUJiZs3Qtar9DeodJb8VjG9QKBgQDpKlvmF4SLQ2EqQOCL\nkDRWW9OPfOHm854RV64c4TeC3TXLWGp/PAwGyBJHIgabGn7xPqZJFXjKC+uAD7q1\nNzWZGmTNQIesOKJXxLixcsTNNdYyZElv1ci5KnxonMJb3XK4JMO96orRWkCTdXrU\nq+sIUuFL0FNgZUxlbPuRgWA9MQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "vertex-ai@plugspace-app.iam.gserviceaccount.com",
+  "client_id": "114528533491498392957",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vertex-ai%40plugspace-app.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

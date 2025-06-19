@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "6754c4cd13455b95365306a6"
+  },
+  "email": "fasih682@gmail.com",
+  "password": "$2b$10$EbDZBs.toSw.qac/pfcf4eX0PkHnm4xFOSaNXob5Ud6SXamujC/oW",
+  "fullName": "Fasih Ul Haq Kamran",
+  "authProvider": "email",
+  "subscription": "free",
+  "subscriptionDetails": {
+    "status": "active"
+  },
+  "companyName": "Fiver",
+  "phoneNumber": "+923165477374",
+  "website": "",
+  "visitCount": 2,
+  "savedProducts": [],
+  "createdAt": {
+    "$date": "2024-12-07T21:57:33.479Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T22:05:34.328Z"
+  },
+  "__v": 0,
+  "lastLogin": {
+    "$date": "2024-12-07T22:05:34.328Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6754c65813455b95365318cf"
+  },
+  "email": "techgamers785@gmail.com",
+  "password": "$2b$10$uhOgFE5icb78y8Pza6bwwepJPzhZBFWjTZGm1AoGWVC/UP6fiw49e",
+  "fullName": "Fasih Ul Haq Kamran",
+  "authProvider": "email",
+  "subscription": "free",
+  "subscriptionDetails": {
+    "status": "active"
+  },
+  "companyName": "Fiver",
+  "phoneNumber": "+923165477374",
+  "website": "",
+  "visitCount": 1,
+  "savedProducts": [],
+  "createdAt": {
+    "$date": "2024-12-07T22:04:08.182Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T22:05:23.613Z"
+  },
+  "__v": 0,
+  "lastLogin": {
+    "$date": "2024-12-07T22:05:23.612Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6754c8d2b17462b794ebf269"
+  },
+  "email": "discordnitro66666@gmail.com",
+  "firebaseUid": "AKdqelQPctYfBtJuOCq5c5eYtIp2",
+  "fullName": "MAVIX ORG.",
+  "authProvider": "google",
+  "subscription": "free",
+  "subscriptionDetails": {
+    "status": "active"
+  },
+  "visitCount": 0,
+  "savedProducts": [],
+  "createdAt": {
+    "$date": "2024-12-07T22:14:42.891Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-07T22:14:42.891Z"
+  },
+  "__v": 0
+}]
