@@ -1535,4 +1535,80 @@ router.post("/contact", upload.single("attachment"), async (req, res) => {
   }
 });
 
+// Report User route - for sending report emails
+router.post("/report", async (req, res) => {
+  try {
+    const { reporterEmail, reportedEmail, reason } = req.body;
+
+    // Basic validation
+    if (!reporterEmail || !reportedEmail || !reason) {
+      return res.status(400).json({
+        success: false,
+        message: "Reporter email, reported email and reason are required",
+      });
+    }
+
+    // Create a transporter
+    let transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: process.env.EMAIL_USER || "plugspaceapp@gmail.com",
+        pass: process.env.EMAIL_PASS, // Make sure to set this in your .env file
+      },
+    });
+
+    // Build email HTML content
+    let emailContent = `
+            <h2>Report User</h2>
+            <p><strong>Reporter Email:</strong> ${reporterEmail}</p>
+            <p><strong>Reported Email:</strong> ${reportedEmail}</p>
+            <p><strong>Reason:</strong> ${reason}</p>
+        `;
+
+    // Email options
+    let mailOptions = {
+      from: process.env.EMAIL_USER || "plugspaceapp@gmail.com",
+      to: "plugspaceapp@gmail.com",
+      subject: "Report User",
+      html: emailContent,
+    };
+
+    // Add attachment if provided
+    if (req.file) {
+      mailOptions.attachments = [
+        {
+          filename: req.file.originalname,
+          path: req.file.path,
+        },
+      ];
+    }
+
+    // Send email
+    const info = await transporter.sendMail(mailOptions);
+
+    // Remove attachment file after sending
+    if (req.file) {
+      try {
+        await fs.promises.unlink(req.file.path);
+      } catch (error) {
+        console.error("Error deleting attachment file:", error);
+      }
+    }
+
+    return res.json({
+      success: true,
+      message: "Report email sent successfully",
+      messageId: info.messageId,
+    });
+  } catch (error) {
+    console.error("Error sending report email:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Failed to send report email",
+      error: error.message,
+    });
+  }
+});
 module.exports = router;
