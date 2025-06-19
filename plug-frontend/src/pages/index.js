@@ -18,11 +18,11 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen text-[#CCCCCC] relative bg-[#000000] overflow-x-hidden">
       {/* Hero Section */}
-      <HeroSection
+      {/* <HeroSection
         minusToken={minusToken}
         searchMode={searchMode}
         setSearchMode={setSearchMode}
-      />
+      /> */}
 
 
       {/* Recommendation Section */}

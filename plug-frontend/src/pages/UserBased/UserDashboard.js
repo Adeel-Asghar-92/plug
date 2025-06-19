@@ -55,7 +55,6 @@ const UserDashboard = () => {
   const [favorities, setFavourites] = useState([]);
   const [isFollowerModalOpen, setIsFollowerModalOpen] = useState(false);
 
-  
   const categories = [
     "Yachts",
     "Home",
@@ -154,13 +153,13 @@ const UserDashboard = () => {
 
   // EditForm Component
   const getFollowersByEmails = async () => {
-    const emails = stats.followers
+    const emails = stats.followers;
     try {
       const response = await axios.post(
         `${process.env.REACT_APP_API_BASEURL}/api/user/getUsersDetail`,
         { emails }
       );
-      debugger
+      debugger;
       setFollowers(response.data.data);
       setIsFollowerModalOpen(true);
     } catch (error) {
@@ -168,13 +167,13 @@ const UserDashboard = () => {
     }
   };
   const getFavouritesByEmails = async () => {
-    const emails = stats.followers
+    const emails = stats.followers;
     try {
       const response = await axios.post(
         `${process.env.REACT_APP_API_BASEURL}/api/user/getUsersDetail`,
         { emails }
       );
-      debugger
+      debugger;
       setFavourites(response.data.data);
       setIsFollowerModalOpen(true);
     } catch (error) {
@@ -209,7 +208,7 @@ const UserDashboard = () => {
           const response = await axios.get(
             `${process.env.REACT_APP_API_BASEURL}/api/admin/categories`,
             {
-              params: { email: process.env.REACT_APP_ADMIN_EMAIL },
+              params: { email: process.env.REACT_APP_ADMIN_EMAIL, userEmail: user.email },
             }
           );
           setCategories(response.data.categories || []);
@@ -567,13 +566,107 @@ const UserDashboard = () => {
     const [selectedSubCategory, setSelectedSubCategory] = useState("");
     const [selectedSecondSubCategory, setSelectedSecondSubCategory] =
       useState("");
+    const [customSubCategory, setCustomSubCategory] = useState("");
+    const [customSecondSubCategory, setCustomSecondSubCategory] = useState("");
 
-    const handleSave = () => {
+    const handleAddSubcategory = async (categoryId) => {
+      if (!customSubCategory) return;
+
+      try {
+        const response = await axios.post(
+          `${process.env.REACT_APP_API_BASEURL}/api/admin/categories/${categoryId}/subcategories`,
+          { customSubCategory, email: user.email },
+          { params: { email: process.env.REACT_APP_ADMIN_EMAIL } }
+        );
+        debugger;
+        setCustomSubCategory(response.data.subcategory._id);
+        return response.data;
+      } catch (err) {
+        toast.error(err.response?.data?.message || "Failed to add subcategory");
+      }
+    };
+
+    const handleSave = async () => {
+      let customSelectedSubCategory = "";
+      let customSelectedSubCategoryId = "";
+      let customSelectedSecondSubCategory = "";
       if (!selectedCategory) {
         toast.error("Please select a category");
         return;
       }
-      onSave(selectedCategory, selectedSubCategory, selectedSecondSubCategory);
+      if (selectedSubCategory === "-1" && !customSubCategory) {
+        toast.error("Please enter a subcategory");
+        return;
+      }
+      if (selectedSecondSubCategory === "-1" && !customSecondSubCategory) {
+        toast.error("Please enter a second subcategory");
+        return;
+      }
+
+      const category = categories.find((cat) => cat.name === selectedCategory);
+      // const result = await handleAddSubcategory(category._id);
+      const subCategoryExists = category.subcategories.some(
+        (subcategory) => subcategory.name === selectedSubCategory
+      );
+      if (customSubCategory) {
+        try {
+          const response = await axios.post(
+            `${process.env.REACT_APP_API_BASEURL}/api/admin/categories/${category._id}/subcategories`,
+            { subcategoryName: customSubCategory, email: user.email },
+            { params: { email: process.env.REACT_APP_ADMIN_EMAIL } }
+          );
+          console.log(
+            response.data.subcategories[response.data.subcategories.length - 1]
+              ._id
+          );
+          customSelectedSubCategoryId =
+            response.data.subcategories[response.data.subcategories.length - 1]
+              ._id;
+          customSelectedSubCategory =
+            response.data.subcategories[response.data.subcategories.length - 1]
+              .name;
+        } catch (err) {
+          toast.error(err.response?.data?.message || "Failed to add subcategory");
+          return;
+        }
+      }
+
+      if (customSecondSubCategory) {
+        try {
+          const response = await axios.post(
+            `${process.env.REACT_APP_API_BASEURL}/api/admin/categories/${category._id}/subcategories/${subCategoryExists ? subCategoryExists:  customSelectedSubCategoryId}/second-subcategories`,
+            {
+              secondSubcategoryName: customSecondSubCategory,
+              email: user.email,
+            },
+            { params: { email: process.env.REACT_APP_ADMIN_EMAIL } }
+          );
+          debugger;
+          customSelectedSecondSubCategory =
+           selectedSubCategory === "-1" ? response.data.subcategories[
+              response.data.subcategories.length - 1
+            ].secondSubcategories[response.data.subcategories[
+              response.data.subcategories.length - 1
+            ].secondSubcategories.length - 1].name : response.data.subcategories.find((subcategory) => subcategory.name === selectedSubCategory).secondSubcategories[response.data.subcategories.find((subcategory) => subcategory.name === selectedSubCategory).secondSubcategories.length - 1].name;
+        } catch (err) {
+          toast.error(
+            err.response?.data?.message ||
+              "Failed to add second-level subcategory"
+          );
+          return;
+        }
+      }
+
+      const subCategory =
+        selectedSubCategory === "-1"
+          ? customSelectedSubCategory
+          : selectedSubCategory;
+      const secondSubCategory =
+        selectedSecondSubCategory === "-1"
+          ? customSelectedSecondSubCategory
+          : selectedSecondSubCategory;
+      debugger;
+      onSave(selectedCategory, subCategory, secondSubCategory);
       setSelectedCategory("");
       setSelectedSubCategory("");
       setSelectedSecondSubCategory("");
@@ -650,11 +743,22 @@ const UserDashboard = () => {
                               {subcat.name}
                             </option>
                           ))}
+                      <option value="-1">Other</option>
                     </select>
                     <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none w-5 h-5" />
                   </div>
                 </div>
-
+                {selectedSubCategory === "-1" && (
+                  <div className="mt-3">
+                    <input
+                      type="text"
+                      placeholder="Enter custom subcategory"
+                      className="w-full p-3 bg-[#333333] text-white rounded-lg focus:ring-2 focus:ring-[#2ab6e4] focus:outline-none border border-gray-700"
+                      value={customSubCategory}
+                      onChange={(e) => setCustomSubCategory(e.target.value)}
+                    />
+                  </div>
+                )}
                 {/* Second Subcategory Selection */}
                 <div>
                   <label className="block text-gray-300 mb-2 text-sm font-medium">
@@ -688,10 +792,24 @@ const UserDashboard = () => {
                               {secondSubcat.name}
                             </option>
                           ))}
+                      <option value="-1">Other</option>
                     </select>
                     <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none w-5 h-5" />
                   </div>
                 </div>
+                {selectedSecondSubCategory === "-1" && (
+                  <div className="mt-3">
+                    <input
+                      type="text"
+                      placeholder="Enter custom second subcategory"
+                      className="w-full p-3 bg-[#333333] text-white rounded-lg focus:ring-2 focus:ring-[#2ab6e4] focus:outline-none border border-gray-700"
+                      value={customSecondSubCategory}
+                      onChange={(e) =>
+                        setCustomSecondSubCategory(e.target.value)
+                      }
+                    />
+                  </div>
+                )}
               </div>
 
               <div className="flex justify-end space-x-3">
@@ -741,7 +859,7 @@ const UserDashboard = () => {
           const response = await axios.get(
             `${process.env.REACT_APP_API_BASEURL}/api/admin/categories`,
             {
-              params: { email: process.env.REACT_APP_ADMIN_EMAIL },
+              params: { email: user.email },
             }
           );
           setCategories(response.data.categories || []);
@@ -1294,7 +1412,7 @@ const UserDashboard = () => {
       </div>
     );
   }
-console.log("keyResponse.data.stats",stats);
+  console.log("keyResponse.data.stats", stats);
 
   return (
     <div className="min-h-screen bg-gray-900">
@@ -1414,10 +1532,13 @@ console.log("keyResponse.data.stats",stats);
           </div>
         )}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center mb-8 gap-5">
-          <button className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg" >
+          <button className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg">
             Likes {numberToKMG(stats?.favourites?.length || 0)}
           </button>
-          <button className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg" onClick={getFollowersByEmails}>
+          <button
+            className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg"
+            onClick={getFollowersByEmails}
+          >
             Followers {numberToKMG(stats?.followers?.length || 0)}
           </button>
         </div>
@@ -1594,7 +1715,11 @@ console.log("keyResponse.data.stats",stats);
             />
           </>
         )}
-        <FollowerModal data={followers} isOpen={isFollowerModalOpen} onClose={() => setIsFollowerModalOpen(false)}/>
+        <FollowerModal
+          data={followers}
+          isOpen={isFollowerModalOpen}
+          onClose={() => setIsFollowerModalOpen(false)}
+        />
       </div>
     </div>
   );

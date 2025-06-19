@@ -666,14 +666,44 @@ router.post(
 );
 
 // Get all categories
-router.get("/admin/categories", isAdmin, async (req, res) => {
+router.get("/admin/categories", async (req, res) => {
+  const email = req.query.email || null; // Assuming email comes as query param
+
   try {
-    const categories = await Category.find().sort({ name: 1 });
-    res.json({ categories }); // Send the raw categories array
+    const allCategories = await Category.find().lean().sort({ name: 1 }); // Use .lean() for better performance
+
+    // Filter logic
+    const filteredCategories = allCategories.map((category) => {
+      const filteredSubcategories = category.subcategories
+        .filter(
+          (sub) =>
+            (!email && !sub.email) || (email && (!sub.email || sub.email === email))
+        )
+        .map((sub) => {
+          const filteredSecondSubs = sub.secondSubcategories?.filter(
+            (second) =>
+              (!email && !second.email) ||
+              (email && (!second.email || second.email === email))
+          );
+
+          return {
+            ...sub,
+            secondSubcategories: filteredSecondSubs,
+          };
+        });
+
+      return {
+        ...category,
+        subcategories: filteredSubcategories,
+      };
+    });
+
+    res.json({ categories: filteredCategories });
   } catch (error) {
-    res
-      .status(500)
-      .json({ message: "Error fetching categories", error: error.message });
+    res.status(500).json({
+      message: "Error fetching categories",
+      error: error.message,
+    });
   }
 });
 
@@ -705,10 +735,10 @@ router.post("/admin/categories", isAdmin, async (req, res) => {
 // Add subcategory to existing category
 router.post(
   "/admin/categories/:categoryId/subcategories",
-  isAdmin,
+  // isAdmin,
   async (req, res) => {
     try {
-      const { subcategoryName } = req.body;
+      const { subcategoryName, email } = req.body;
       const { categoryId } = req.params;
 
       const category = await Category.findById(categoryId);
@@ -718,14 +748,16 @@ router.post(
 
       // Check if subcategory already exists
       const subcategoryExists = category.subcategories.some(
-        (sub) => sub.name.toLowerCase() === subcategoryName.toLowerCase()
+        (sub) =>
+          sub.name.toLowerCase() === subcategoryName.toLowerCase() &&
+          (email === null ? sub.email === null : sub.email === email)
       );
 
       if (subcategoryExists) {
         return res.status(400).json({ message: "Subcategory already exists" });
       }
 
-      category.subcategories.push({ name: subcategoryName });
+      category.subcategories.push({ name: subcategoryName, email });
       await category.save();
 
       res.status(201).json(category);
@@ -796,10 +828,10 @@ router.delete(
 // Add second-level subcategory to existing subcategory
 router.post(
   "/admin/categories/:categoryId/subcategories/:subcategoryId/second-subcategories",
-  isAdmin,
+  // isAdmin,
   async (req, res) => {
     try {
-      const { secondSubcategoryName } = req.body;
+      const { secondSubcategoryName, email } = req.body;
       const { categoryId, subcategoryId } = req.params;
 
       // Find the category
@@ -816,7 +848,8 @@ router.post(
 
       // Check if second-level subcategory already exists
       const secondSubcategoryExists = subcategory.secondSubcategories.some(
-        (sub) => sub.name.toLowerCase() === secondSubcategoryName.toLowerCase()
+        (sub) => sub.name.toLowerCase() === secondSubcategoryName.toLowerCase() &&
+          (email === null ? sub.email === null : sub.email === email)
       );
 
       if (secondSubcategoryExists) {
@@ -826,7 +859,7 @@ router.post(
       }
 
       // Add the second-level subcategory
-      subcategory.secondSubcategories.push({ name: secondSubcategoryName });
+      subcategory.secondSubcategories.push({ name: secondSubcategoryName, email });
       await category.save();
 
       res.status(201).json(category);
