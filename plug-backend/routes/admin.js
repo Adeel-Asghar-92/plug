@@ -1554,8 +1554,8 @@ router.post("/report", async (req, res) => {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: process.env.EMAIL_USER || "plugspaceapp@gmail.com",
-        pass: process.env.EMAIL_PASS, // Make sure to set this in your .env file
+        user: "adeelasghar9292@gmail.com" || "plugspaceapp@gmail.com",
+        pass: "hrvxizkvtkmsjvaw", // Make sure to set this in your .env file
       },
     });
 
@@ -1569,21 +1569,11 @@ router.post("/report", async (req, res) => {
 
     // Email options
     let mailOptions = {
-      from: process.env.EMAIL_USER || "plugspaceapp@gmail.com",
-      to: "plugspaceapp@gmail.com",
+      from: "adeelasghar9292@gmail.com" || "plugspaceapp@gmail.com",
+      to: "contact@valuevauil.ai",
       subject: "Report User",
       html: emailContent,
     };
-
-    // Add attachment if provided
-    if (req.file) {
-      mailOptions.attachments = [
-        {
-          filename: req.file.originalname,
-          path: req.file.path,
-        },
-      ];
-    }
 
     // Send email
     const info = await transporter.sendMail(mailOptions);
