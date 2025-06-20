@@ -114,8 +114,8 @@ const RecommendationCard = ({ product, setProducts }) => {
         </button>
         <div className="absolute top-14 right-2 z-10">
           <span className="px-2 py-0.5 rounded text-white">
-            {product?.favourites?.length
-              ? numberToKMG(product?.favourites?.length)
+            {product?.viewsCount
+              ? numberToKMG(product?.viewsCount * 5)
               : ""}
           </span>
         </div>

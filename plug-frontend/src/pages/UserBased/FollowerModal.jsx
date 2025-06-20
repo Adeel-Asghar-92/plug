@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X, Search, MoreVertical, Shield, ShieldOff, Flag, AlertTriangle } from "lucide-react"
 import axios from "axios"
 import { useAuth } from "../../contexts/AuthContext"
+import { useNavigate } from "react-router-dom"
 
 const FollowerModal = ({ data, isOpen, onClose }) => {
   const [searchTerm, setSearchTerm] = useState("")
@@ -16,7 +17,8 @@ const FollowerModal = ({ data, isOpen, onClose }) => {
   const [isSubmittingReport, setIsSubmittingReport] = useState(false)
   const { user } = useAuth()
   const dropdownRef = useRef(null)
-  const buttonRefs = useRef({})
+  const buttonRefs = useRef({});
+  const navigate = useNavigate()
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -183,7 +185,7 @@ const FollowerModal = ({ data, isOpen, onClose }) => {
                       transition={{ duration: 0.3, delay: index * 0.05 }}
                       className="flex items-center justify-between p-2 bg-gray-50 hover:bg-gray-100 rounded-xl transition-all duration-200 group"
                     >
-                      <div className="flex items-center space-x-4 flex-1 min-w-0">
+                      <div className="flex items-center space-x-4 flex-1 min-w-0" onClick={() => navigate(`/user/${follower._id}`)}>
                         <div className="relative">
                           {follower.photoURL ? (
                             <img

@@ -338,7 +338,7 @@ router.get("/user/saved-products", async (req, res) => {
     const favouritesSet = new Set();
     reversedProducts.forEach((product) => {
       product.followers.forEach((follower) => followersSet.add(follower.email));
-      product.favourites.forEach((favourite) => favouritesSet.add(favourite.email));
+      product.views.forEach((favourite) => favouritesSet.add(favourite.email));
     });
     const uniqueFollowers = Array.from(followersSet);
     const uniqueFavourites = Array.from(favouritesSet);

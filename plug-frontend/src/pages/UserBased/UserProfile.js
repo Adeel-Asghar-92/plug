@@ -143,7 +143,7 @@ const UserProfile = () => {
             User Profile
           </h1>
           <Link
-            to="/"
+            to="/dashboard"
             className="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-gray-300 transition-colors border rounded-lg sm:w-auto border-[#2ab6e4] hover:text-white sm:text-base"
           > Go Home</Link>
         </div>
@@ -201,7 +201,7 @@ const UserProfile = () => {
         </div>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-start mb-8 gap-5">
           <button className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg">
-            Likes {numberToKMG(stats?.favourites?.length || 0)}
+            Likes {numberToKMG(stats?.favourites?.length * 5|| 0)}
           </button>
           <button
             className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg"

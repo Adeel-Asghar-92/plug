@@ -1574,7 +1574,7 @@ router.post("/report", async (req, res) => {
     // Email options
     let mailOptions = {
       from: "adeelasghar9292@gmail.com" || "plugspaceapp@gmail.com",
-      to: "contact@valuevauil.ai",
+      to: "contact@valuevault.ai",
       subject: "Report User",
       html: emailContent,
     };

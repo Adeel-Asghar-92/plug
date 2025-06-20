@@ -1534,7 +1534,7 @@ console.log("User Dashboard Rendered", user);
         )}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center mb-8 gap-5">
           <button className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg">
-            Likes {numberToKMG(stats?.favourites?.length || 0)}
+            Likes {numberToKMG(stats?.favourites?.length * 5 || 0)}
           </button>
           <button
             className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg"
@@ -1598,8 +1598,8 @@ console.log("User Dashboard Rendered", user);
                       </div>
                       <div className="absolute top-14 right-2">
                         <span className="px-2 py-0.5 rounded text-white">
-                          {product?.favourites?.length
-                            ? numberToKMG(product?.favourites?.length)
+                          {product?.viewsCount
+                            ? numberToKMG(product?.viewsCount * 5)
                             : ""}
                         </span>
                       </div>
