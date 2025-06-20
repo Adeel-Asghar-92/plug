@@ -101,6 +101,7 @@ const UserDashboard = () => {
     }
     fetchDashboardData();
   }, [user, navigate, fetchDashboardData]);
+console.log("User Dashboard Rendered", user);
 
   const regenerateApiKey = async () => {
     try {
@@ -852,7 +853,7 @@ const UserDashboard = () => {
     const [modalLoading, setModalLoading] = useState(false);
     const [categories, setCategories] = useState([]);
     const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
-
+    
     useEffect(() => {
       const fetchCategories = async () => {
         try {

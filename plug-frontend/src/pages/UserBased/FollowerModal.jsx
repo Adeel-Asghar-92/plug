@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { X, Search, MoreVertical, Shield, ShieldOff, Flag } from "lucide-react"
+import { X, Search, MoreVertical, Shield, ShieldOff, Flag, AlertTriangle } from "lucide-react"
 import axios from "axios"
 import { useAuth } from "../../contexts/AuthContext"
 
@@ -10,6 +10,10 @@ const FollowerModal = ({ data, isOpen, onClose }) => {
   const [searchTerm, setSearchTerm] = useState("")
   const [dropdownOpen, setDropdownOpen] = useState(null)
   const [dropdownPosition, setDropdownPosition] = useState({ top: 0, left: 0 })
+  const [reportModalOpen, setReportModalOpen] = useState(false)
+  const [reportReason, setReportReason] = useState("")
+  const [reportingUser, setReportingUser] = useState(null)
+  const [isSubmittingReport, setIsSubmittingReport] = useState(false)
   const { user } = useAuth()
   const dropdownRef = useRef(null)
   const buttonRefs = useRef({})
@@ -40,8 +44,41 @@ const FollowerModal = ({ data, isOpen, onClose }) => {
       } catch (error) {
         console.error("Error blocking user:", error)
       }
+    } else if (action === "report") {
+      const follower = filteredFollowers.find((f) => f.email === blockEmail)
+      setReportingUser(follower)
+      setReportModalOpen(true)
     }
     setDropdownOpen(null)
+  }
+
+  const handleReportSubmit = async () => {
+    if (!reportReason.trim()) {
+      alert("Please provide a reason for reporting this user.")
+      return
+    }
+
+    setIsSubmittingReport(true)
+    try {
+      const response = await axios.post(`${process.env.REACT_APP_API_BASEURL}/api/report`, {
+        reporterEmail: user.email,
+        reportedEmail: reportingUser.email,
+        reason: reportReason,
+      })
+      
+      if (response.data.success) {
+        alert("Report submitted successfully!")
+        setReportModalOpen(false)
+        setReportReason("")
+        setReportingUser(null)
+      } else {
+        alert("Failed to submit report. Please try again.")
+      }
+    } catch (error) {
+      console.error("Error submitting report:", error)
+      alert("Failed to submit report. Please try again.")
+    }
+    setIsSubmittingReport(false)
   }
 
   const handleDropdownToggle = (followerId) => {
@@ -159,11 +196,9 @@ const FollowerModal = ({ data, isOpen, onClose }) => {
                               {follower.fullName.charAt(0).toUpperCase()}
                             </div>
                           )}
-                          {/* <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white"></div> */}
                         </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="font-semibold text-gray-900 truncate text-lg">{follower.fullName}</h3>
-                          {/* <p className="text-sm text-gray-500 truncate">{follower.email || "No email provided"}</p> */}
                         </div>
                       </div>
 
@@ -181,21 +216,6 @@ const FollowerModal = ({ data, isOpen, onClose }) => {
               </div>
             </motion.div>
           </div>
-
-          {/* Footer */}
-          {/* <div className="p-6 pt-4 bg-gray-50 border-t border-gray-100">
-            <div className="flex items-center justify-between text-sm text-gray-500">
-              <span>
-                Showing {filteredFollowers.length} of {data.length} followers
-              </span>
-              <button
-                onClick={onClose}
-                className="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg transition-colors duration-200 font-medium"
-              >
-                Close
-              </button>
-            </div>
-          </div> */}
         </motion.div>
 
         {/* Fixed Position Dropdown - Outside Modal */}
@@ -218,7 +238,7 @@ const FollowerModal = ({ data, isOpen, onClose }) => {
                   const follower = filteredFollowers.find((f) => f._id === dropdownOpen)
                   if (follower) handleAction(follower.email, "block")
                 }}
-                className="flex items-center w-full px-4 py-3 text-sm text-gray-700  hover:bg-gray-600 hover:text-white transition-colors duration-200"
+                className="flex items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-600 hover:text-white transition-colors duration-200"
               >
                 <ShieldOff className="w-4 h-4 mr-3" />
                 Block User
@@ -239,11 +259,93 @@ const FollowerModal = ({ data, isOpen, onClose }) => {
                   const follower = filteredFollowers.find((f) => f._id === dropdownOpen)
                   if (follower) handleAction(follower.email, "report")
                 }}
-                className="flex items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-600 hover:text-white  transition-colors duration-200"
+                className="flex items-center w-full px-4 py-3 text-sm text-gray-700 hover:bg-gray-600 hover:text-white transition-colors duration-200"
               >
                 <Flag className="w-4 h-4 mr-3 text-orange-500" />
                 Report User
               </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Report Modal */}
+        <AnimatePresence>
+          {reportModalOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-[70] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+            >
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                exit={{ scale: 0.9, opacity: 0, y: 20 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden"
+              >
+                {/* Report Header */}
+                <div className="flex items-center justify-between p-6 bg-gradient-to-r from-red-50 to-orange-50 border-b border-red-100">
+                  <div className="flex items-center space-x-3">
+                    <div className="p-2 bg-red-100 rounded-full">
+                      <AlertTriangle className="w-5 h-5 text-red-600" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-900">Report User</h3>
+                      <p className="text-sm text-gray-600">Report {reportingUser?.fullName}</p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => {
+                      setReportModalOpen(false)
+                      setReportReason("")
+                      setReportingUser(null)
+                    }}
+                    className="p-2 text-gray-400 hover:text-gray-600 hover:bg-white/50 rounded-full transition-all duration-200"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+
+                {/* Report Content */}
+                <div className="p-6">
+                  <div className="mb-4">
+                    <label htmlFor="reportReason" className="block text-sm font-medium text-gray-700 mb-2">
+                      Reason for reporting <span className="text-red-500">*</span>
+                    </label>
+                    <textarea
+                      id="reportReason"
+                      value={reportReason}
+                      onChange={(e) => setReportReason(e.target.value)}
+                      placeholder="Please describe why you're reporting this user..."
+                      className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent resize-none text-gray-900 placeholder-gray-500"
+                      rows={4}
+                      disabled={isSubmittingReport}
+                    />
+                  </div>
+
+                  <div className="flex space-x-3">
+                    <button
+                      onClick={() => {
+                        setReportModalOpen(false)
+                        setReportReason("")
+                        setReportingUser(null)
+                      }}
+                      className="flex-1 px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg transition-colors duration-200 font-medium"
+                      disabled={isSubmittingReport}
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      onClick={handleReportSubmit}
+                      disabled={isSubmittingReport || !reportReason.trim()}
+                      className="flex-1 px-4 py-2 bg-red-600 hover:bg-red-700 disabled:bg-red-300 disabled:cursor-not-allowed text-white rounded-lg transition-colors duration-200 font-medium"
+                    >
+                      {isSubmittingReport ? "Submitting..." : "Submit Report"}
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
             </motion.div>
           )}
         </AnimatePresence>

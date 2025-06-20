@@ -926,6 +926,28 @@ router.post("/user/getUsersDetail", async (req, res) => {
       .json({ error: "An internal server error occurred." });
   }
 });
+router.get("/user/getUserDetail", async (req, res) => {
+  try {
+    const { id } = req.query;
+    if (!id) {
+      return res.status(400).json({ error: "Invalid user id" });
+    }
+    const user = await User.findById(id, {
+      _id: 1,
+      fullName: 1,
+      email: 1,
+      photoURL: 1,
+    });
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    return res.json({ data: user });
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ error: "An internal server error occurred." });
+  }
+});
 
 router.post("/user/blockEmail", async (req, res) => {
   try {

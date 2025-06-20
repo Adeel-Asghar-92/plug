@@ -1550,14 +1550,18 @@ router.post("/report", async (req, res) => {
 
     // Create a transporter
     let transporter = nodemailer.createTransport({
+
+      service: 'gmail',
       host: "smtp.gmail.com",
       port: 587,
-      secure: false, // true for 465, false for other ports
+      secure: true,
+      from: "adeelasghar9292@gmail.com",
       auth: {
         user: "adeelasghar9292@gmail.com" || "plugspaceapp@gmail.com",
-        pass: "hrvxizkvtkmsjvaw", // Make sure to set this in your .env file
+        pass: "sqjodwcwthledukw", // Make sure to set this in your .env file
       },
     });
+    
 
     // Build email HTML content
     let emailContent = `

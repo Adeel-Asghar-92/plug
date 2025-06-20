@@ -23,16 +23,24 @@ const UserProfile = () => {
   const [favorities, setFavourites] = useState([]);
   const [isFollowerModalOpen, setIsFollowerModalOpen] = useState(false);
   const { userId } = useParams();
+  const [userProfile, setUserProfile] = useState({});
   const fetchDashboardData = useCallback(async () => {
     if (!user) return;
     try {
       setLoader(true);
-      const [productsResponse] = await Promise.all([
+      const [productsResponse, userResponse] = await Promise.all([
         axios.get(
           `${process.env.REACT_APP_API_BASEURL}/api/user/saved-products`,
           { params: { id: userId } }
         ),
+        axios.get(
+          `${process.env.REACT_APP_API_BASEURL}/api/user/getUserDetail`,
+          { params: { id: userId } }
+        ),
+
       ]);
+      debugger
+      setUserProfile(userResponse.data.data);
       setStats(productsResponse.data.stats);
       const filtered = productsResponse.data.products.filter(
         (p) => !p.category?.toLowerCase().includes("accessor")
@@ -55,6 +63,7 @@ const UserProfile = () => {
     fetchDashboardData();
   }, [user, navigate, fetchDashboardData, loading]);
 
+  
   const removeSavedProduct = async (productId) => {
     try {
       await axios.delete(
@@ -138,7 +147,58 @@ const UserProfile = () => {
             className="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-gray-300 transition-colors border rounded-lg sm:w-auto border-[#2ab6e4] hover:text-white sm:text-base"
           > Go Home</Link>
         </div>
+                {/* Profile Section - Top and Center */}
+        <div className="flex flex-col items-center justify-center mb-8 sm:mb-12">
+          <motion.div
+            className="flex flex-col items-center space-y-4"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            {/* Profile Image */}
+            <div className="relative">
+              <motion.div
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-[#2ab6e4] shadow-lg"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >
+                {userProfile?.photourl ? (
+                  <img
+                    src={userProfile.photourl || "/placeholder.svg"}
+                    alt={userProfile.fullName || "Profile"}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                        userProfile.fullName || "userProfile",
+                      )}&background=2ab6e4&color=fff&size=200`
+                    }}
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-[#2ab6e4] to-[#1a8fb3] flex items-center justify-center">
+                    <span className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+                      {userProfile?.fullName?.charAt(0)?.toUpperCase() || "U"}
+                    </span>
+                  </div>
+                )}
+              </motion.div>
+              {/* Online indicator */}
+              {/* <div className="absolute bottom-2 right-2 w-4 h-4 sm:w-5 sm:h-5 bg-green-500 rounded-full border-2 border-gray-900"></div> */}
+            </div>
 
+            {/* User Name */}
+            <motion.div
+              className="text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
+                {userProfile?.fullName || "User Name"}
+              </h2>
+              {/* <p className="text-gray-400 text-sm sm:text-base">@{user?.email?.split("@")[0] || "username"}</p> */}
+            </motion.div>
+          </motion.div>
+        </div>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-start mb-8 gap-5">
           <button className="flex items-center px-6 py-2 text-base text-white transition-colors border border-gray-400 rounded-lg">
             Likes {numberToKMG(stats?.favourites?.length || 0)}
